@@ -1,0 +1,68 @@
+{{> header }}
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <h2 class="text-center">Ventas</h2>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">{{titulo}}</h3>
+          <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Código de venta</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Nro Identificación</th>
+      <th scope="col">Tipo cliente</th>
+      <th scope="col">Dirección</th>
+      <th scope="col">Método de pago</th>
+      <th scope="col">Acciones</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">A795</th>
+      <td>Camila Soto</td>
+      <td>1739402759</td>
+      <td>Persona natural</td>
+      <td>Calle 10 # 3</td>
+      <td>Efectivo</td>
+      <td><button type="button" class="btn btn-success">Ver detalle</button></td>
+    </tr>
+    <tr>
+      <th scope="row">A700</th>
+      <td>Pedro Paramo</td>
+      <td>12343456789</td>
+      <td>Persona natural</td>
+      <td>Calle 15 # 3</td>
+      <td>Efectivo</td>
+      <td><button type="button" class="btn btn-success">Ver detalle</button></td>
+    </tr>
+    <tr>
+      <th scope="row">A007</th>
+      <td>Panadería el cholo</td>
+      <td>253456</td>
+      <td>Empresa</td>
+      <td>Calle 75 # 9</td>
+      <td>Efectivo</td>
+      <td><button type="button" class="btn btn-success">Ver detalle</button></td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+          <div id="jsGrid1"></div>
+        </div>
+        <!-- /.card-body -->
+      </div>
+      <!-- /.card -->
+    </section>
+    <!-- /.content -->
+  </div>
+
+  
+{{> footer }}

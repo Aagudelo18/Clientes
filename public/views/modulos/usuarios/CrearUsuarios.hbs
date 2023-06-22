@@ -1,0 +1,48 @@
+{{> header }}
+<!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+<form>   
+  
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputState">Asignar rol</label>
+      <select id="asignarRol" class="form-control">
+        <option selected>Cliente</option>
+        <option>Administrador</option>
+        <option>Empleado</option>
+      </select>
+    </div>
+
+    <div class="form-group col-md-6">
+      <label for="inputAddress">Nro Identificación</label>
+    <input type="number" class="form-control" id="nroIdentificacionUsuario" placeholder="Ej: 1147963633">
+    </div>
+  
+  <div class="form-group col-md-6">
+      <label for="inputAddress">Nombre</label>
+    <input type="text" class="form-control" id="nombreUsuario" placeholder="Ej: Juan Alberto Mendoza">
+  </div>
+  
+  <div class="form-group col-md-6">
+    <label for="inputEmail4">Email</label>
+    <input type="email" class="form-control" id="emailUsuario" placeholder="Email">
+  </div>
+
+  <div class="form-group col-md-4">
+      <label for="inputState">Estado</label>
+      <select id="estadoUsuario" class="form-control">
+        <option selected>Activo</option>
+        <option>Inactivo</option>
+      </select>
+    </div>
+
+</div>
+
+
+  <button type="submit" class="btn btn-primary" id="btnRegistrar">Registrar usuario</button>
+  <script src="js/funcionesUsuarios.js"></script>
+  <div id="error"></div>
+</form>
+</div>
+
+{{> footer }}

@@ -1,0 +1,100 @@
+  {{> header }}
+
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+
+    <div>
+      <h1 class="text-center">Usuarios</h1>
+    </div>
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          
+          <a class="btn btn-info btn-sm" href="/crear-usuario">
+              <i class="fas fa-new-alt">
+              </i>
+              Crear Usuarios
+          </a>
+          <br>
+
+<div id="error"></div> 
+
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">{{titulo}}</h3>
+          <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col" style="width: 8%">Nro Identificación</th>
+      <th scope="col" style="width: 8%">Nombre</th>
+      <th scope="col" style="width: 8%">Email</th>
+      <th scope="col" style="width: 8%">Tipo Usuario</th>
+      <th scope="col" style="width: 8%">Estado</th>
+      <th scope="col" style="width: 8%">Acciones</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1739402759</th>
+      <td>Camila Soto</td>
+      <td>cami@mail.com</td>
+      <td>Persona Natural</td>
+      <td>
+        <div class="custom-control custom-switch">
+           <input type="checkbox" class="custom-control-input" id="check1" checked>
+          <label class="custom-control-label" for="check1"></label>
+        </div>
+      </td>
+      <td><button type="button" class="btn btn-primary">Editar</button></td>
+    </tr>
+    <tr>
+      <th scope="row">1739047759</th>
+      <td>Pedro Paramo</td>
+      <td>pedri@mail.com</td>
+      <td>Persona Juridica</td>
+      <td>
+        <div class="custom-control custom-switch">
+           <input type="checkbox" class="custom-control-input" id="check1" checked>
+          <label class="custom-control-label" for="check1"></label>
+        </div></td>
+      <td><button type="button" class="btn btn-primary">Editar</button></td>
+    </tr>
+    <tr>
+      <th scope="row">126629028</th>
+      <td>Tienda el negro</td>
+      <td>elnegro@mail.com</td>
+      <td>Empresa</td>
+      <td>
+        <div class="custom-control custom-switch">
+           <input type="checkbox" class="custom-control-input" id="check1" checked>
+          <label class="custom-control-label" for="check1"></label>
+        </div>
+        </td>
+        <td><button type="button" class="btn btn-primary">Editar</button></td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+          <div id="jsGrid1"></div>
+        </div>
+        <!-- /.card-body -->
+      </div>
+      <!-- /.card -->
+    </section>
+    <!-- /.content -->
+  </div>
+
+  
+
+{{> footer  }}

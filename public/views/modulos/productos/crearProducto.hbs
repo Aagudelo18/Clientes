@@ -1,0 +1,59 @@
+{{> header }}
+
+<div class="content-wrapper">
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-12">
+          <h1 class="m-0 text-center">Crear Producto</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="content">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <form action="" method="POST">
+                <div class="form-group">
+                  <label for="nombre">Nombre</label>
+                  <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese el nombre del producto" required>
+                  <span id="nombreError" class="erroresFormulario"></span>
+                </div>
+                <div class="form-group">
+                  <label for="categoria">Categoría</label>
+                  <select name="categoria" class="form-control" required>
+                    <option value="">Seleccione una categoría</option>
+                    <option value="panaderia">Panadería</option>
+                    <option value="tortas">Tortas</option>
+                    <option value="reposteria">Repostería</option>
+                    <option value="comida">Comida de Sal</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="descripcion">Descripción</label>
+                  <textarea name="descripcion" id="descripcion" class="form-control" placeholder="Ingrese la descripción del producto" required></textarea>
+                  <span id="descripcionError" class="erroresFormulario"></span>
+                </div>
+                <div class="form-group">
+                  <label for="precio">Precio</label>
+                  <input type="text" name="precio" id="precio" class="form-control" placeholder="Ingrese el precio del producto" required>
+                  <span id="precioError" class="erroresFormulario"></span>
+                </div>
+                <div class="form-group text-center">
+                  <button id="btnCrearProducto" type="button" class="btn btn-primary">Crear</button>
+                  <a href="/productos"><button type="button" class="btn btn-secondary">Cancelar</button></a>
+                </div>
+                <script src="js/funcionesProductos.js"></script>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+{{> footer }}

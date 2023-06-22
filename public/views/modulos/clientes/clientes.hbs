@@ -1,0 +1,145 @@
+{{> header }}
+
+
+
+ <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-12 text-center">
+            <h1>Clientes</h1>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+      <!-- Default box -->
+      <div class="card">
+        <div class="card-header">
+          <a class="btn btn-info btn-sm" href="/crearCliente">
+              <i class="fas fa-new-alt">
+              </i>
+              Crear Cliente
+          </a>
+        </div>
+        <div class="card-body p-0">
+          <table class="table table-striped Categorias">
+              <thead>
+                  <tr>
+                      <th style="width: 10%">
+                          Numero documento
+                      </th>
+                      <th style="width: 10%">
+                          Nombre 
+                      </th>
+                      <th style="width: 10%">
+                          Correo
+                      </th>
+                      <th style="width: 10%">
+                          Direccion
+                      </th>
+                      <th style="width: 10%">
+                          Celular
+                      </th>
+                      <th style="width: 10%">
+                          Tipo cliente
+                      </th>
+                      <th style="width: 10%" class="text-center">
+                           Estado
+                      </th>
+                      <th style="width: 15%" class="text-center">
+                          Acciones
+                      </th>
+                  </tr>
+              </thead>
+              <tbody id="contenido">
+
+              </tbody>
+          </table>
+        </div>
+        <!-- /.card-body -->
+      </div>
+      <!-- /.card -->
+
+    </section>
+    <!-- /.content -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Editar Cliente</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="" method="POST">
+                <div class="form-group">
+                  <label for="numeroDocumento">Numero Documento</label>
+                  <input type="text" name="numeroDocumento" id="numeroDocumento" class="form-control" placeholder="Ingrese el Numero Documento" required>
+                  <span id="numeroDocumentoError" class="erroresFormulario"></span>
+                </div>
+                <div class="form-group">
+                  <label for="nombre">Nombre</label>
+                  <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese el nombre " required>
+                  <span id="nombreError" class="erroresFormulario"></span>
+                </div>
+                <div class="form-group">
+                  <label for="correo">Correo</label>
+                  <input type="text" name="correo" id="correo" class="form-control" placeholder="Ingrese el correo " required>
+                  <span id="correoError" class="erroresFormulario"></span>
+                </div>
+                <div class="form-group">
+                  <label for="direccion">Direccion</label>
+                  <input type="text" name="direccion" id="direccion" class="form-control" placeholder="Ingrese la direccion " required>
+                  <span id="direccionError" class="erroresFormulario"></span>
+                </div>
+                 <div class="form-group">
+                  <label for="celular">Celular</label>
+                  <input type="text" name="celular" id="celular" class="form-control" placeholder="Ingrese la celular " required>
+                  <span id="celularError" class="erroresFormulario"></span>
+                </div>
+                 <div class="form-group">
+                  <label for="tipoCliente">Tipo Cliente</label>
+                  <select name="tipoCliente" id="tipoCliente" class="form-control" required>
+                    <option value="" disabled selected>Seleccione un Tipo Cliente</option>
+                    <option value="persona natural">Persona Natural</option>
+                    <option value="empresa">Empresa</option>
+                  </select>
+                  <span id="tipoClienteError" class="erroresFormulario"></span>
+                </div>
+                <div class="form-group">
+                  <label for="estado">Estado</label>
+                  <select name="estado" id="estado" class="form-control" required>
+                    <option value="" disabled selected>Seleccione el estado</option>
+                    <option value="true">Activo</option>
+                    <option value="false">Inactivo</option>
+                  </select>
+                  <span id="estadoError" class="erroresFormulario"></span>
+                  </div>
+                
+              </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button id="btnActualizarCliente" type="button" class="btn btn-primary">Actualizar</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <!-- /.content-wrapper -->
+
+  <script src="js/funcionesClientes.js"></script>
+  <script> listarDatos() </script>
+
+
+
+{{> footer }}

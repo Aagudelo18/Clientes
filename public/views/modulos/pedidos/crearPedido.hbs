@@ -1,0 +1,127 @@
+
+{{> header}}
+
+<!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+
+    <div>
+      <h1 class="text-center">Crear Pedido</h1>
+    </div>
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          
+          <br>
+<form>   
+  
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputState">Persona</label>
+      <select id="asignarRol" class="form-control">
+        <option selected>Natural</option>
+        <option>Juridica</option>
+      </select>
+    </div>
+
+    <div class="form-group col-md-6">
+      <label for="inputAddress">Nombre de quien Recibe</label>
+    <input type="text" class="form-control" id="nombreRecibe" placeholder="Ej: Carlos Morales">
+    </div>
+  
+  <div class="form-group col-md-4">
+      <label for="inputAddress">Nombre y Apellido</label>
+    <input type="text" class="form-control" id="nombreCliente" placeholder="Ej: Andrea Liliana Morales">
+  </div>
+  
+  <div class="form-group col-md-4">
+    <label for="inputEmail4">Telefono</label>
+    <input type="number" class="form-control" id="telefono" placeholder="Nro fijo o celular">
+  </div>
+
+  <div class="form-group col-md-4">
+    <label for="inputEmail4">Direccion</label>
+    <input type="text" class="form-control" id="direccion" placeholder="Ej: Cra 50 # 90 - 07">
+  </div>
+
+  <div class="form-group col-md-4">
+      <label for="inputState">Productos</label>
+      <select id="producto" class="form-control">
+        <option value="">Panaderia</option>
+        <option value="">Comida de sal</option>
+        <option>Reposteria</option>
+        <option>Tortas y Tartas</option>
+
+      </select>
+    </div>
+
+    <div class="form-group col-md-1">
+      <label for="inputAddress">Cantidad</label>
+    <input type="number" class="form-control" id="cantidad" placeholder="Ej: 1">
+  </div>
+    <div class="form-group col-md-6">
+      <label for="inputAddress">Fecha Entrega</label>
+    <input type="text" class="form-control" id="fechaEntrega" placeholder="Ej: dia/mes/año">
+  </div>
+</div>
+    <!-- Buscador -->
+          <div class="form-group">
+            <div class="input-group">
+              <input class="form-control" type="search" placeholder="Buscar Producto" aria-label="Buscar Producto">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+            <label for="inputAddress" class="mt-2">Buscar:</label>
+          </div>
+
+          <div class="form-group text-center">
+                  <button id="btnRegistrarPedido" type="button" class="btn btn-primary">Crear Pedido</button>
+                  <a href="/pedidos"><button type="button" class="btn btn-secondary">Cancelar</button></a>
+          </div>
+  <script src="../../js/funcionesPedido.js"></script>
+</form>
+
+<div class="erroresPedidos" id="erroresPedidos"></div>
+
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+    
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">{{titulo}}</h3>
+          <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col" style="width: 15%">Nombre Recibe</th>
+      <th scope="col" style="width: 15%">Cliente</th>
+      <th scope="col" style="width: 8%">Telefono</th>
+      <th scope="col" style="width: 8%">Persona</th>
+      <th scope="col" style="width: 14%">Dirección</th>
+      <th scope="col" style="width: 8%">Producto</th>
+      <th scope="col" style="width: 8%">Cantidad</th>
+      <th scope="col" style="width: 8%">Acciones</th>
+      <th scope="col" style="width: 8%"></th>
+      
+    </tr>
+  </thead>
+</table>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+          <div id="jsGrid1"></div>
+        </div>
+        <!-- /.card-body -->
+      </div>
+      <!-- /.card -->
+    </section>
+    <!-- /.content -->
+  </div>
+  
+{{> footer}}

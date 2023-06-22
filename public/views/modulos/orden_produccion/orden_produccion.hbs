@@ -1,0 +1,148 @@
+{{> header }}
+
+
+
+ <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-12 text-center">
+            <h1>Orden de producción</h1>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+      <!-- Default box -->
+      <div class="card">
+        <div class="card-header">
+        <div class="card-body p-0">
+          <table class="table table-striped Categorias">
+              <thead>
+                  <tr>
+                      <th style="width: 3%">
+                          Código
+                      </th>
+                      <th style="width: 10%">
+                          Producto
+                      </th>
+                      <th style="width: 10%">
+                          Area
+                      </th>
+                      <th style="width: 10%">
+                          Cantidad
+                      </th>
+                      <th style="width: 10%">
+                          Ultima actulización
+                      </th>
+                      <th style="width: 8%" class="text-center">
+                          Estado
+                      </th>
+                      <th style="width: 8%" class="text-center">
+                          Fecha de entrega
+                      </th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>
+                          OP1
+                      </td>
+                      <td>
+                          <a>
+                              Croissant
+                          </a>
+                      </td>
+                      <td>
+                          <a>
+                              Panaderia
+                          </a>
+                      </td>
+                      <td>
+                          <a>
+                              50
+                          </a>
+                      </td>
+                      <td>
+                          <a>
+                              2023-05-22 10:30:45am
+                          </a>
+                      </td>
+                      <td>
+                        <div class="form-group">
+                            <select name="categoria" class="form-control" required>
+                                <option value="" disabled>En espera</option>
+                                <option value="panaderia" disabled>En preparación</option>
+                                <option value="tortas" selected>Terminado</option>
+                            </select>
+                        </div>
+                      </td>
+                      <td class="project-actions text-center">
+                          <a>
+                              2023-05-22
+                          </a>
+                      </td>
+                      
+                  </tr>
+
+                  <tr>
+                      <td>
+                          OP2
+                      </td>
+                      <td>
+                          <a>
+                              Brownies
+                          </a>
+                      </td>
+                      <td>
+                          <a>
+                              Reposteria
+                          </a>
+                      </td>
+                      <td>
+                          <a>
+                              20
+                          </a>
+                      </td>
+                      <td>
+                          <a>
+                              2023-05-22 08:10:12am
+                          </a>
+                      </td>
+                      <td>
+                        <div class="form-group">
+                            <select name="categoria" class="form-control" required>
+                                <option value="" disabled>En espera</option>
+                                <option value="panaderia" selected>En preparación</option>
+                                <option value="tortas">Terminado</option>
+                            </select>
+                        </div>
+                      </td>
+                      <td class="project-actions text-center">
+                          <a>
+                              2023-05-22
+                          </a>
+                      </td>
+                      
+                  </tr>
+
+              </tbody>
+          </table>
+        </div>
+        <!-- /.card-body -->
+      </div>
+      <!-- /.card -->
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+
+
+{{> footer }}
